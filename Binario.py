@@ -10,7 +10,7 @@ Created on Wed Jun 10 13:23:38 2020
 from cvxopt import glpk
 from cvxopt.base import matrix as m
  
-c = m([-25000., -18000., 31000.])
+c = m([-25000., -18000., -31000.])
 A = m([[8000., 7000.], [6000., 4000.], [12000., 8000.]])
 b = m([20000., 16000.])
 

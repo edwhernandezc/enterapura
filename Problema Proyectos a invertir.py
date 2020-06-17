@@ -1,0 +1,21 @@
+#Problema Proyectos a invertir
+from cvxopt import glpk
+from cvxopt.base import matrix as m
+ 
+c = m([-46356337., -37927912.,-4214212.])
+A = m([[42134625.], [25280775.], [16853850.]])
+b = m([42134625.])
+
+intVars = range(3) #Especificamos que las 5 variables son enteras
+binVars = range(3) #Especificamos que las 5 variables son binarias
+
+sol = glpk.ilp(c, A, b, I=set(intVars), B=set(binVars))
+print('Los valores óptimos de las variables son:\n{0}'.format(sol[1]))
+if sol[0]=='optimal':
+ 
+    print('El valor óptimo es:  ${0} COP'.format((-c.T*sol[1])[0]))
+# El valor óptimo debemos transponerlo y cambiarle el signo, estamos maximizando.
+ 
+else:
+ 
+    print('El problema no devolvió una solución óptima. El estado del solucionador fue {0}'.format(sol[0]))

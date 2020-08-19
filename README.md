@@ -18,6 +18,10 @@ Si se desea ejecutar en el pc se debe tener python e instalar el “CVXOPT”, p
 	
 pip install cvxopt
 
+### CVXOPT
+CVXOPT (en español Software de Python para la optimización convexa) es un paquete de software gratuito para optimización convexa basado en el lenguaje de programación Python. Se puede usar con el intérprete interactivo de Python, en la línea de comandos ejecutando scripts de Python, o integrado en otro software a través de módulos de extensión. Su objetivo principal es hacer que el desarrollo de software para aplicaciones de optimización convexa sea sencillo al construir sobre la extensa biblioteca estándar de Python y sobre las fortalezas de Python como lenguaje de programación de alto nivel.
+CVXOPT es desarrollado por Martin Andersen desde 2004 y recibe actualizaciones y mejoras continúas haciendo el paquete cada vez mas completo, también es software libre; puede redistribuir y / o modificarlo bajo los términos de la Licencia Pública General de GNU
+
 También se puede seguir los pasos que estan en la pagina de cvxopt
 https://cvxopt.org/install/index.html
 O se pueden descargar los archivos necesarios para su instalación
